@@ -70,6 +70,12 @@ p {
   }
 }
 
+@media tv (min-width: 1920px) {
+  header h1, p, a {
+    font-size: 60px;
+  }
+}
+
 header {
   background-image: url(../Images/notepad.png);
   background-color: #FFFFFF;
