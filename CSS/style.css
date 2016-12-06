@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
   margin-bottom: 5px;
 }
@@ -40,6 +40,123 @@ p {
   width:96%;
   float:left;
   position:relative;
-  mid-height: 1px;
+  min-height: 1px;
   margin:0 2% 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .one-half {
+    width:46%;
+  }
+  .one-third {
+    width:29.333333%;
+  }
+  .one-fourth {
+    width:21%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  background-image: url(../Images/notepad.png);
+  background-color: #FFFFFF;
+}
+header nav {
+  background-color:#FFFFFF
+}
+header nav ul {
+  list-style-type: none;
+  text-align: right;
+  float: right;
+  margin:0;
+  overflow:hidden;
+  background-color:#FFFFFF;
+}
+header ul >li {
+  display: inline;
+  margin: 20px 30px;
+  padding-top: 60px;
+  background-color:#FFFFFF;
+}
+header h1 {
+  padding-left:50px;
+  margin-top: 50px;
+}
+header nav ul > li.btn-outline > a {
+  background:#4990E2;
+  color:#FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px
+}
+header nav ul > li.btn-outline > a:hover {
+  background:#E738D9;
+  color:#FFFFFF;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px
+ }
+ header nav ul > li > a {
+   color:#4A4A4A;
+   text-decoration: none;
+ }
+ .menu {
+  margin-top: 60px;
+ }
+ header p {
+  padding-left:50px;
+  padding-bottom: 5em;
+ }
+header .btn{
+  background:#4990E2;
+  color:#FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-left: 50px;
+  margin-bottom: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.one-fourth {
+  background:#4990E2;
+  color:#FFFFFF;
+  border: 1px;
+  border-color:#FFFFFF;
+  height: 300px;
+  width: 200px;
+  padding: .5em .5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  justify-content: space-between;
 }
