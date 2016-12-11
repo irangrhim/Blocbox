@@ -6,17 +6,17 @@
    <meta charset="UTF-8">
    <title>Save, share and collaborate | Blocbox</title>
    <!--Google Fonts-->
- <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato|PT+Sans|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato|PT+Sans|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
 <!-- CSS -->
 <link rel="stylesheet" href="CSS/normalize.css">
 <link rel="stylesheet" href="CSS/style.css">
 <link rel="stylesheet" href="CSS/font-awesome.css">
 <link rel="stylesheet" href="CSS/animate.css">
-
 </head>
+
 <body>
 <!-- Hero -->
-<header>
+  <header>
     <nav class="hero">
       <a href="index.html" class="site-logo"><img src="Images/Blocbox.png" alt="Blocbox" /></a>
       <ul class="menu">
@@ -28,34 +28,77 @@
         <li class="btn-outline"><a href="signup.html">Get Started!</a></li>
       </ul>
     </nav>
-    <h1 class="animated fadeIn">Save, share and collaborate.</h1>
-    <p>blocbox lets you collect and sort information.<br/>Create simple notes, store images, and add links.</p>
-    <a href="signup.html" class="btn">Start Your Free Trial!</a>
-  </div>
-</header>
+      <h1 class="animated fadeIn">Save, share and collaborate.</h1>
+      <p>blocbox lets you collect and sort information.<br/>Create simple notes, store images, and add links.</p>
+      <a href="signup.html" class="btn">Start Your Free Trial!</a>
+  </header>
+
+
+
+<center>
 <main role="main">
 <!-- Benefits -->
-  <section class="benefits">
-    <ul class="container">
-      <li class="one-fourth">
-        <h2>Create notes</h2>
-        <p>Using Markdown, you can create simple text-based documents to save and share. You can collaborate with others to write and edit content.</p>
-      </li>
-      <li class="one-fourth">
-        <h2>Save images</h2>
-        <p>Are there images you find interesting enough to save? Now you have a way to organize and store those within blocbox.</p>
-      </li>
-      <li class="one-fourth">
-        <h2>Add links</h2>
-        <p>Forget bookmarking sites in your browser. With blocbox, you can add links, group them and view them from any computer.</p>
-       </li>
-       <li class="one-fourth">
-        <h2>Collaborate</h2>
-        <p>Easier way to collaborate with people in different cities. Use blocbox to keep track of new changes made by team members.</p>
-      </li>
-    </ul>
-  </section>
+<div class= "bottom-half">
+<section class="benefits">
+  <ul class="container">
+    <li class="one-fourth">
+      <img class="benefitsicon" src="images/note.png" alt="Note"/>
+      <h2>Create notes</h2>
+      <p>Using Markdown, you can create simple text-based documents to save and share. You can collaborate with others to write and edit content.</p>
+    </li>
+    <li class="one-fourth">
+      <img class="benefitsicon" src="images/photo.png" alt="Photo"/>
+      <h2>Save images</h2>
+      <p>Are there images you find interesting enough to save? Now you have a way to organize and store those within blocbox.</p>
+    </li>
+    <li class="one-fourth">
+      <img class="benefitsicon" src="images/link.png" alt="Link"/>
+      <h2>Add links</h2>
+      <p>Forget bookmarking sites in your browser. With blocbox, you can add links, group them and view them from any computer.</p>
+    </li>
+    <li class="one-fourth">
+      <img class="benefitsicon" src="images/collaborate.png" alt="collaborate"/>
+      <h2>Collaborate</h2>
+      <p>Easier way to collaborate with people in different cities. Use blocbox to keep track of new changes made by team members.</p>
+    </li>
+  </ul>
+</section>
 </main>
+
+<section class="testimonials">
+  <div class="container">
+    <h2>Who uses blocbox?</h2>
+    <p>blocbox has more than 100,000 satisfied users storing and collaborating with teams across
+the world. Here’s what a few have to say:</p>
+  </div>
+   <ul class="container">
+    <li class="one-fourth">
+      <blockquote>"blocbox has made it easier to find and keep things I love. I can share with other designers on my team and create new categories with awesome stuff. And creating simple text documents couldn't be easier."
+      </blockquote>
+      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar">
+      <p class="name"><strong>Stella B.</strong><br/>Freelance Designer, N. Dakota</p>
+    </li>
+  <li class="one-fourth">
+    <blockquote>"blocbox has made it easier to find and keep things I love. I can share with other designers on my team and create new categories with awesome stuff. And creating simple text documents couldn't be easier."
+    </blockquote>
+    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar">
+    <p class="name"><strong>Stella B.</strong><br/>Freelance Designer, N. Dakota</p>
+  </li>
+  <li class="one-fourth">
+    <blockquote>"blocbox has made it easier to find and keep things I love. I can share with other designers on my team and create new categories with awesome stuff. And creating simple text documents couldn't be easier."
+    </blockquote>
+    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar">
+    <p class="name"><strong>Stella B.</strong><br/>Freelance Designer, N. Dakota</p>
+  </li>
+  <li class="one-fourth">
+    <blockquote>"blocbox has made it easier to find and keep things I love. I can share with other designers on my team and create new categories with awesome stuff. And creating simple text documents couldn't be easier."
+    </blockquote>
+    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar">
+    <p class="name"><strong>Stella B.</strong><br/>Freelance Designer, N. Dakota</p>
+  </li>     
+ </ul>
+</section>
+
 <!-- Pricing -->
   <section class="pricing">
     <div class="container">
@@ -64,8 +107,9 @@
     </div>
     <ul class="container">
       <li class="one-third">
-        <div class="box">
+        <div class="outer-box">
           <h3>Casual</h3>
+          <img class="castle" src="images/castle.png" alt="castle">
           <h4>Free</h4>
           <ul>
             <li>Up to 5 boxes</li>
@@ -75,9 +119,11 @@
           <a href="signup.html" class="btn">Start Your Free Trial!</a>
         </div>
       </li>
+
     <li class="one-third">
-      <div class="box middle">
+      <div class="outer-box">
         <h3>Professional</h3>
+        <img class="castle" src="images/castle2.png" alt="castle">
         <h4><span>$</span>5 <span class="month">/month</span></h4>
         <ul>
           <li>Unlimited boxes</li>
@@ -89,8 +135,9 @@
       </div>
     </li>
     <li class="one-third">
-      <div class="box">
+      <div class="outer-box">
         <h3>Expert</h3>
+        <img class="bigcastle" src="images/castle3.png" alt="castle">
         <h4><span>$</span>10 <span class="month">/month</span></h4>
         <ul>
           <li>Unlimited boxes</li>
@@ -103,50 +150,25 @@
     </li>
     </ul>
   </section>
+</center>
 
-<section class="testimonials">
-  <div class="container">
-    <h2>Who uses blocbox?</h2>
-    <p>blocbox has more than 100,000 satisfied users storing and collaborating with teams across
-the world. Here’s what a few have to say:</p>
-</div>
-<ul class="container">
-  <li class="one-half">
-    <blockquote>"blocbox has made it easier to find and keep things I love. I can share with other designers on my team and create new categories with awesome stuff. And creating simple text documents couldn't be easier."</blockquote>
-    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg" alt="avatar">
-    <p class="name"><strong>Stella B.</strong><br/>Freelance Designer, N. Dakota</p>
-    </li>
-  <li class="one-half">
-    <blockquote>"blocbox has made it easier to find and keep things I love. I can share with other designers on my team and create new categories with awesome stuff. And creating simple text documents couldn't be easier."</blockquote>
-    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg" alt="avatar">
-    <p class="name"><strong>Stella B.</strong><br/>Freelance Designer, N. Dakota</p>
-    </li>
-  </ul>
-</section>
-
-<!--Check point-->
-<section class="Signup2">
-  <h2>Ready to try blocbox?</h2>
-  <p>Try blocbox for free for 30 days</p>
-  <a href="signup.html" class="btn">Start Your Free Trial!</a>
-</section>
 
 <footer>
   <div class="container footer-nav-block">
     <div class="left-footer-bloc one-third">
       <p class="copyright-block">&copy; 2015. <strong>Blocbox</strong>" - All Rights Reserved. </p>
     </div>
-    <nav class="link-block middle-footer-block one-third">
-      <ul>
-        <li><a href="">Terms</a></li> /
-        <li><a href="">Privacy Policy</a></li> /
-        <li><a href="">Contact Us</a></li> /
-        <li><a href="">About Us</a></li> /
-        <li><a href="">Twitter</a></li>
+    <nav class="link-block middle-footer-block one-half">
+      <ul class="nav-items">
+        <li><a class="link" href="">Terms</a></li> /
+        <li><a class="link" href="">Privacy Policy</a></li> /
+        <li><a class="link" href="">Contact Us</a></li> /
+        <li><a class="link" href="">About Us</a></li> /
+        <li><a class="link" href="">Twitter</a></li>
       </ul>
     </nav>
-    <div class="right-footer-block one-third">
-      <img class="logo" src="images/Blocbox.png" alt="Blocbox"/>
+    <div class="logo one-fifth">
+      <img src="images/Blocbox.png" alt="Blocbox"/>
     </div>
   </div>
 </footer>
