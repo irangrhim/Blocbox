@@ -498,6 +498,13 @@ line-height: 15px;
   margin-right:10px;
   margin-top:8px;
 }
+.left-nav .active {
+  background-color: #BDD8F7;
+}
+.left-nav .active a {
+  color: #3498DB;
+  text-decoration: none;
+}
 
 /* CONTENT */
 .content {
