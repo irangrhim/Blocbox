@@ -49,6 +49,8 @@ p {
     width: 750px;
   }
 }
+
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -94,12 +96,13 @@ header nav ul {
   overflow:hidden;
   background-color:#FFFFFF;
 }
-header ul >li {
-  display: inline;
-  margin: 20px 30px;
-  padding-top: 60px;
+header ul > li {
+  display: inline-block;
   background-color:#FFFFFF;
+  margin-right: 25px;
 }
+ul.menu li:nth-child(5){display:none;}
+
 header h1 {
   padding-left:50px;
   margin-top: 50px;
@@ -131,6 +134,12 @@ header nav ul > li.btn-outline > a:hover {
    color:#4A4A4A;
    text-decoration: none;
  }
+
+ @media (max-width:780px) {
+  ul.menu li:nth-child(5) {display:inline;}
+  ul.menu li:nth-child(-n+4) {display:none;}
+ }
+
  .menu {
   margin-top: 60px;
  }
@@ -178,20 +187,29 @@ background: linear-gradient(-180deg, #F2F9FC 0%, #C4E6F0 87%)
 }
 
 .beneifts ul {
-  padding:4em 4em;
+  padding:2em 2em;
 }
 
 .benefits ul li {
   list-style-type: none;
-  display: inline-block;
+  display: block;
   background-color: #4990E2;
   color:#FFFFFF;
   width: 200px;
   height: 250px;
   padding: 2em 1em;
   border-style: double;
+  position:relative;
 }
 
+ @media (max-width:1200px) {
+ .benefits ul.container li:nth-child(4) {display:none;}
+ .benefits ul.container li {margin-left: 50px;}
+ }
+ @media (max-width:1000px) {
+/* .benefits ul.container li:nth-child(3) {display:none;}*/
+.benefits ul.container li {margin-left: 30px;}
+ }
 .benefits .benefitsicon {
   display: inline-block;
 }
@@ -213,6 +231,10 @@ background: linear-gradient(-180deg, #F2F9FC 0%, #C4E6F0 87%)
 .testimonials {
   text-align: center;
 }
+
+ @media (max-width:990px) {
+ .testimonials ul.container li:nth-child(n+3) {display:none;}
+ }
 
 .testimonials h2 {
   text-align: center;
@@ -343,7 +365,7 @@ background: #2A3A4D;
 border: 1px solid #979797; 
 color: #FFFFFF;
 position: inline;
-padding-bottom: 100px;
+padding-bottom: 50px;
 }
 
 footer .link-bloc ul {
@@ -356,6 +378,11 @@ footer .link-block ul li {
   list-style-type:none;
   display: inline;
 }
+
+ @media (max-width:1000px) {
+  ul.nav-items {display:none;}
+ }
+
 .pricing h4 {
   font-size: 20px;
   margin:0 0;
@@ -373,4 +400,7 @@ footer .link-block ul li {
   float: right;
   position: inline-block;
   width: 10%;
+}
+@media (max-width:1000px){
+  .logo {float:left; margin-top:-50px;}
 }
