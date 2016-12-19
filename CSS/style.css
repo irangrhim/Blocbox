@@ -555,8 +555,9 @@ line-height: 15px;
 }
 .left-nav .active {
   background-color: #BDD8F7;
+    color: #3498DB;
 }
-.left-nav .active a {
+.left-nav .active span {
   color: #3498DB;
   text-decoration: none;
 }
