@@ -1,39 +1,30 @@
-/*
- * Dropit v1.1.0
- * http://dev7studios.com/dropit
- *
- * Copyright 2012, Dev7studios
- * Free to use and abuse under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
-
-/* These styles assume you are using ul and li */
-.dropit {
+.upit {
     list-style: none;
     padding: 0;
-	margin: 15px 0 0;
+  margin: 0;
     float:right;
     display:inline-block;
 }
-.dropit .dropit-trigger { position: relative; }
-.dropit .dropit-submenu {
+.upit .upit-trigger { position: relative; }
+.upit .upit-submenu {
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     right: 0; /* dropdown left or right */
     z-index: 1000;
     display: none;
-    min-width: 100px;
+    width: 140px;
     list-style: none;
-	padding: 20px;
-	margin: 20px 0 0;
+    text-align: left;
+  padding: 20px;
+  margin: 20px 0 0;
 }
-.dropit .dropit-open .dropit-submenu { 
+.upit .upit-open .upit-submenu { 
     display: block;
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
     border-radius: 4px;
 }
-.dropit .dropit-open .dropit-submenu:after {
+.upit .upit-open .upit-submenu:after {
     content:" ";
     position: absolute;
     border-style: solid;
@@ -41,25 +32,26 @@
     border-color: #FFFFFF transparent;
     display: block;
     width: 0;
-    z-index: 1;
-    top: -8px;
+    z-index: 1000;
+    bottom: 8px;
     right: 10px;
 }
 
-.dropit .dropit-open .dropitsubmenu li {
+.upit .upit-open .upitsubmenu li {
  display: block;
  margin-bottom:20px;   
 }
-.dropit .dropit-open .dropit-submenu li:last-child {
+.upit .upit-open .upit-submenu li:last-child {
     margin-bottom: 0px;
 }
-.dropit .dropit-open .dropit-submenu li a {
+.upit .upit-open .upit-submenu li a {
     color:#34495E;
     text-decoration: none;
+    padding:0;
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-weight: 100;
 }
-.Setting .dropit {
+.upit {
     list-style: none;
     padding: 0;
     margin: 15px 0 0;
@@ -67,8 +59,8 @@
     display:inline-block;
 }
 
-.Setting .dropit .dropit-trigger { position: relative; }
-.Setting .dropit .dropit-submenu {
+.upit .upit-trigger { position: relative; }
+.upit .upit-submenu {
     position: absolute;
     bottom: 100%;
     right: 0; /* dropdown left or right */
@@ -80,13 +72,13 @@
     margin: 20px 0 0;
 }
 
-.Setting .dropit .dropit-open .dropit-submenu { 
+.upit .upit-open .upit-submenu { 
     display: block;
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
     border-radius: 4px;
 }
-.Setting .dropit .dropit-open .dropit-submenu:after {
+.upit .upit-open .upit-submenu:after {
     content:" ";
     position: absolute;
     border-style: solid;
@@ -100,21 +92,21 @@
 }
 
 
-.Setting .dropit .dropit-open .dropitsubmenu li {
+.upit .upit-open .upitsubmenu li {
  display: block;
  margin-top:20px;   
 }
 
-.Setting .dropit .dropit-open .dropit-submenu li:last-child {
+.upit .upit-open .upit-submenu li:last-child {
     margin-bottom: 0px;
 }
-.Setting .dropit .dropit-open .dropit-submenu li a {
+.upit .upit-open .upit-submenu li a {
     color:#34495E;
     text-decoration: none;
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-weight: 100;
 }
-.Setting .dropit {
+.Setting .upit {
     list-style: none;
     padding: 0;
     margin: 15px 0 0;

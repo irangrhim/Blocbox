@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" href="CSS/dropit.css">
-
+  <link rel="stylesheet" href="CSS/upit.css"
+>
 </head>
 
 <body class="dashboard">
@@ -43,7 +44,15 @@
       <div class="settings">
         <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
         <p>Joey Kirk</p>
+        <ul class="Setting">
+        <li>
         <a href="#"><i class="fa fa-cog"></i></a>
+        <ul>
+          <li><a href="#"><i class="fa fa-expeditedssl"></i>Privacy Settings</a></li>
+          <li><a href="#"><i class="fa fa-gears"></i>Profile</a></li>
+          <li><a href="#"><i class="fa fa-user"></i>Log Out</a></li>
+          </ul>
+          </li>
     </div>
   </nav>
 
@@ -135,7 +144,9 @@
     </main> 
     <script src="JS/jquery-3.1.1.slim.min.js"></script>
     <script src="JS/dropit.js"></script>
+    <script src="JS/upit.js"></script>
     <script type="text/javascript">
+      $(".Setting").upit();
       $(".menu").dropit();
      $( "#menu" ).click(function() {
          $("#left-nav").toggleClass("open", 200);
